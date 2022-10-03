@@ -6,7 +6,7 @@ function adicionarSaldo(valor){
     saldo += valor
 }
 function sacar(valor){
-     let nota100, nota50, nota10, nota5, nota1
+     let nota100, nota50,nota20, nota10, nota5, nota1
     if(saldo < valor ){
         console.log('voçê não tem saldo suficiente') 
     }else if(saldo === 0){
@@ -16,7 +16,8 @@ function sacar(valor){
        
             nota100 = valor / 100
             nota50 = valor % 100 / 50
-            nota10 = valor % 50 / 10
+            nota20 = valor % 50 / 20
+            nota10 = valor % 20 / 10
             nota5  = valor % 10 / 5
             nota1 = valor % 5 / 1
 
@@ -25,6 +26,7 @@ function sacar(valor){
             Está disponivel para sacar :   
             ${Math.floor(nota100)} nota(s) de 100 reias
             ${Math.floor(nota50)}  nota(s) de 50 reias
+            ${Math.floor(nota20)}  nota(s) de 20 reias
             ${Math.floor(nota10)}  nota(s) de 10 reias
             ${Math.floor(nota5)}   nota(s) de 5 reias
             ${Math.floor(nota1)}   nota(s) de 1 real
