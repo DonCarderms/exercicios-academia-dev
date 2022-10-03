@@ -4,6 +4,6 @@ Olha o que acontece quando  aplicar operações aritiméticas básicas entre dua
 
 'string1' + 'string2' => ${'string1' + 'string2'}
 'string1' - 'string2' => ${'string1' - 'string2'}
-'string1' x 'string2'  => ${'string1' *'string2'}
+'string1' * 'string2'  => ${'string1' *'string2'}
 'string1' / 'string2' => ${'string1' / 'string2'}
 `)

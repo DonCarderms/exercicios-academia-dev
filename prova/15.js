@@ -4,7 +4,7 @@ function verifica(palavra){
   palavra.toString()
   const nova_plavra =  Array.from(palavra)
   const palavra_inverso = Array.from(palavra).reverse()
- return palavra_inverso.toString().toLowerCase() === nova_plavra.toString().toLowerCase() ? true : false
+  return palavra_inverso.toString().toLowerCase() === nova_plavra.toString().toLowerCase() ? true : false
  
 }
 

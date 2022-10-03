@@ -4,24 +4,18 @@ const numeros = [
         41, 37, 19, 37, 10, 32, 45, 13, 19, 38, 14, 13, 1, 11, 35, 7, 0, 45, 2,
         43, 5, 2, 4, 45, 49, 30, 31, 8, 48, 24, 26
     ]
-
-
 let x  = 0, y =0
-    
-numeros.sort();
-
-let current = null;
-let cnt = 0;
-for (var i = 0; i < numeros.length; i++) {
-    if (numeros[i] != current) {
-        if (cnt > 0) {
-           console.log()
+for(let index = 0; index < numeros.length(); index++ ){
+    x = 0
+    for(let index2 = 0; index2 < numeros; index2++){
+        if(numeros[index] === numeros[index2]){
+          x++ 
         }
-        current = numeros[i];
-        cnt = 1;
-    } else {
-        cnt++;
+    }
+    
+    if(x > 0){
+        y++
     }
 }
 
- console.log(cnt)
+console.log(y)

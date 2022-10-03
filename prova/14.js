@@ -10,4 +10,7 @@ do {
 } while(vetor.length < 10);
 
 
-console.log(vetor.sort(function(a, b){return a - b}))
+const listaOredenada = vetor.sort(function(a, b){
+    return a-b
+})
+console.log(listaOredenada.toString())
