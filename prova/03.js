@@ -35,15 +35,20 @@ const rl = require('readline-sync')
         { "id": 29, "valor": 9 }
     ]
     
-    const intervalo = rl.questionInt("informe um intervalo: ")
-    let y = 0
-    let nova_lista = []
-   for(let index in objetos){
-     posicao = objetos[index]
-     if(posicao.valor <= intervalo){
-        y++  
-        nova_lista[y] = posicao
-     }
-   }
 
-   console.log(nova_lista)
+    function retornaNovaLista(objetos){
+            const intervalo = rl.questionInt("informe um intervalo: ")
+            let y = 0
+            let nova_lista = []
+            for(let index in objetos){
+               posicao = objetos[index]
+               if(posicao.valor <= intervalo){
+                  y++  
+                  nova_lista[y] = posicao
+               }
+            }
+            return nova_lista
+    }
+   
+
+   console.log(retornaNovaLista(objetos))
